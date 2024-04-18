@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <!-- creo la navbar -->
+        <!-- NAVBAR -->
 
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container">
@@ -52,23 +52,32 @@
                     </section>
 
                     <div class="pt-3 pb-3">
-                        <form id="addingPreventivo">
+                        <form id="form-addingPreventivo">
                             <div class="mb-3">
                                 <label for="nome" class="form-label"> Nome </label>
                                 <input type="text" name="nome" class="form-control" id="nome"
-                                    placeholder="Inserisci nome">
+                                    placeholder="Inserisci nome" required>
+                                    <div class="invalid-feedback">
+                                        Inserisci Nome
+                                    </div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="cognome" class="form-label"> Cognome </label>
                                 <input type="text" name="cognome" class="form-control" id="cognome"
-                                    placeholder="Inserisci cognome">
+                                    placeholder="Inserisci cognome" required>
+                                    <div class="invalid-feedback">
+                                        Inserisci Cognome
+                                    </div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="email" class="form-label"> Email </label>
                                 <input type="email" name="email" class="form-control" id="email"
-                                    placeholder="Inserisci indirizzo email">
+                                    placeholder="Inserisci indirizzo email" required>
+                                    <div class="invalid-feedback">
+                                        Inserisci E-Mail
+                                    </div>
                             </div>
 
                             <div class="mb-4">
@@ -77,9 +86,9 @@
                                     aria-label="Default select example" required>
                                     <option value="0" label="Seleziona il tipo di lavoro"> 
                                     </option>
-                                    <option value="backendDev"> Backend Development </option>
-                                    <option value="frontendDev"> Frontend Development </option>
-                                    <option value="projAnalysys"> Project Analysis </option>
+                                    <option value="backend"> Backend Development </option>
+                                    <option value="frontend"> Frontend Development </option>
+                                    <option value="projAna"> Project Analysis </option>
                                 </select>
                             </div>
 

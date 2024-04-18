@@ -1,8 +1,22 @@
 console.log ('prova')
+
 // dichiarazione variabbili prezzi lavoro per ora, dichiarazione ore di lavoro fisse, 
+const backend = 20.50
+const frontend = 15.30
+const projAna = 33.60
+
+const oredilavoro =13
+
+
 // creazione array di codici promozionali
+const codiciPromozionali = ['WEB2024']
+
 // dichiarazione valore scontro codice promozionale 
+const sconto = 0.25
+
 // grab del bottone da html
+const button = document.getElementById('form-addingPreventivo')
+
 // validazione form
 
 // calcolare prezzo 
