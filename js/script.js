@@ -1,4 +1,4 @@
-console.log ('prova')
+// console.log ('prova')
 
 // dichiarazione variabbili prezzi lavoro per ora, dichiarazione ore di lavoro fisse, 
 const backend = 20.50
@@ -43,7 +43,7 @@ const forms = document.querySelectorAll('.needs-validation')
 function calcoloPrezzo() {
 
     const userlavoro = tipodiLavoro.value
-    console.log (userlavoro)
+    //console.log (userlavoro)
     // SE
     // lavoro è backend
     let totale= 0
@@ -65,29 +65,29 @@ function calcoloPrezzo() {
     }
 
     const totalesenzasconti = totale
-    console.log (totalesenzasconti)
+    //console.log (totalesenzasconti)
 
 
     // calcolare prezzo finale con sconto
     const sconto = pcode.value
     const codiceSconto = codiciPromozionali.includes(sconto)
-    console.log ("pcode" + codiceSconto)
+    //console.log ("pcode" + codiceSconto)
 
     let prezzo= 0
     // SE 
     // codicde inserito è presente nell'array sconti 
     if (codiceSconto) {
         // prezzofinale = risultato - 25%
-        console.log ("CODICE VALIDO")
+        //console.log ("CODICE VALIDO")
         prezzo = totalesenzasconti - totalesenzasconti * valoresconto
-        console.log ('prerzzo con sconto : ' + parseFloat(prezzo))
+        //console.log ('prerzzo con sconto : ' + parseFloat(prezzo))
 
         // ALTRIMENTI SE
         //sconto è 0
     }else if (sconto == "") {
         // prezzofinale = risultato
         prezzo = totalesenzasconti
-        console.log ('prezzo senza sconto : ' + parseFloat(prezzo))
+        //console.log ('prezzo senza sconto : ' + parseFloat(prezzo))
         // ALTRIMENTI
     }else {
         //ALERT + prezzofinale = risultato
